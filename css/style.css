@@ -102,10 +102,11 @@ body {
     display: flex;
     gap: 1.5rem;
     flex-wrap: wrap;
-    /* Para que se adapte en pantallas pequeñas */
     align-items: flex-start;
 }
+.titdestacado{
 
+}
 .imgdestacada {
     width: 300px;
     height: 300px;
@@ -227,7 +228,3 @@ footer #redessociales img:hover {
     filter: brightness(1.2);
 }
 /*Pie de Pagina*/
-
-
-
-
