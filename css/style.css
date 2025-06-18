@@ -63,18 +63,9 @@ body {
 
 /*Estilos Menu Principal*/
 /*Introduccion y Contenido*/
-.introduccion,
-.contenido {
-    margin-top: 60px;
+.introduccion {
+    margin-top: 80px;
 }
-
-#tituloprincipal {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 20px;
-}
-
 
 .introprincipal {
     text-align: justify;
@@ -104,6 +95,7 @@ body {
     flex-wrap: wrap;
     align-items: flex-start;
 }
+
 .imgdestacada {
     width: 300px;
     height: 300px;
@@ -191,6 +183,7 @@ body {
     width: 20px;
     height: 20px;
 }
+
 /*Menu lateral Derecho*/
 
 /*Pie de Pagina*/
@@ -224,6 +217,7 @@ footer #redessociales img:hover {
     transform: scale(1.1);
     filter: brightness(1.2);
 }
+
 /*Pie de Pagina*/
 /*Formulario de Contacto*/
 
@@ -233,18 +227,18 @@ footer #redessociales img:hover {
     padding-top: 30px;
     background-color: #f3f3f3;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 
 #tituloprincipal {
     text-align: center;
+    font-size: 1.8rem;
     margin-bottom: 20px;
-    font-size: 1.8em;
-    color: #333;
+    color: red;
+    margin-top: 80px;
 }
 
-.formulario {
+#tituloprincipal .formulario {
     display: flex;
     flex-direction: column;
 }
