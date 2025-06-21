@@ -92,7 +92,7 @@ body {
     max-width: 1000px;
     margin: 2rem auto;
     padding: 2rem;
-    background-color: #fdfdfd;
+    background-color: #ccc;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -381,7 +381,7 @@ footer #redessociales img:hover {
     margin-left: 50px;
     align-items: center;
     margin: 0 auto;
-    background-color: #fdfdfd;
+    background-color: #ccc;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -391,7 +391,7 @@ footer #redessociales img:hover {
     justify-content: center;
 }
 
-#ver-mas {
+.ver-mas {
 
     display: flex;
     padding: 12px 25px;
@@ -405,7 +405,7 @@ footer #redessociales img:hover {
     margin: 20px;
 }
 
-#ver-mas a {
+.ver-mas a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -413,13 +413,17 @@ footer #redessociales img:hover {
 
 }
 
-#ver-mas:hover {
+.ver-mas:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+input[type="checkbox"] {
+    display: none;
+}
+
 /* Botón animado */
-#btn-animado {
+.btn-animado {
     display: inline-block;
     padding: 12px 25px;
     background: linear-gradient(45deg, #c62828, #e53935);
@@ -435,7 +439,7 @@ footer #redessociales img:hover {
 }
 
 
-#btn-animado:hover {
+.btn-animado:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
@@ -470,15 +474,15 @@ footer #redessociales img:hover {
 }
 
 /* Mostrar video al hacer clic */
-#video-oculto:checked~.contenedor-video {
+.video-oculto1:checked~.contenedor-video {
     display: flex;
 }
 
-#video-oculto2:checked~.contenedor-video {
+.video-oculto2:checked~.contenedor-video {
     display: flex;
 }
 
-#video-oculto3:checked~.contenedor-video {
+.video-oculto3:checked~.contenedor-video {
     display: flex;
 }
 
@@ -505,6 +509,98 @@ footer #redessociales img:hover {
 }
 
 /*Pagina Peliculas*/
+
+/*Pagina Libros*/
+
+.contenedor-libros {
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ccc;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+}
+
+.titulo-libros {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-right: 10px;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.img-libro {
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+}
+
+.descripcion-libro {
+    text-align: justify;
+    width: 40%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.informacion-libro {
+    max-width: 300px;
+    font-family: Arial, sans-serif;
+    align-content: center;
+}
+
+.informacion-libro ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    font-size: 1em;
+}
+
+.informacion-libro li {
+    margin-top: 5px;
+    width: 220px;
+}
+
+.boton-descarga {
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    width: 150px;
+    text-align: center;
+}
+
+.btn-descarga {
+
+    background-color: #B30000;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    padding: 12px 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-descarga:hover {
+    background-color: #800000;
+}
+
+
+/*Pagina Libros*/
+
 
 /*RESPONSIVO*/
 
@@ -715,7 +811,7 @@ footer #redessociales img:hover {
         display: flex;
     }
 
-    #ver-mas {
+    .ver-mas {
 
         display: flex;
         padding: 12px 25px;
@@ -729,7 +825,7 @@ footer #redessociales img:hover {
         margin: 20px;
     }
 
-    #ver-mas a {
+    .ver-mas a {
         color: #fff;
         text-decoration: none;
         font-weight: bold;
@@ -737,13 +833,13 @@ footer #redessociales img:hover {
 
     }
 
-    #ver-mas:hover {
+    .ver-mas:hover {
         transform: scale(1.05);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
 
     /* Botón animado */
-    #btn-animado {
+    .btn-animado {
         display: inline-block;
         padding: 12px 25px;
         background: linear-gradient(45deg, #c62828, #e53935);
@@ -759,7 +855,7 @@ footer #redessociales img:hover {
     }
 
 
-    #btn-animado:hover {
+    .btn-animado:hover {
         transform: scale(1.05);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
@@ -791,18 +887,20 @@ footer #redessociales img:hover {
         max-height: 80vh;
         display: block;
         border-radius: 8px;
+
     }
 
     /* Mostrar video al hacer clic */
-    #video-oculto:checked~.contenedor-video {
+    .video-oculto:checked~.contenedor-video {
+        display: flex;
+
+    }
+
+    .video-oculto2:checked~.contenedor-video {
         display: flex;
     }
 
-    #video-oculto2:checked~.contenedor-video {
-        display: flex;
-    }
-
-    #video-oculto3:checked~.contenedor-video {
+    .video-oculto3:checked~.contenedor-video {
         display: flex;
     }
 
