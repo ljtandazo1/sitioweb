@@ -602,6 +602,124 @@ input[type="checkbox"] {
 /*Pagina Libros*/
 
 
+/* Pagina Juegos*/
+section.contenido {
+    margin-top: 90px;
+    padding: 20px;
+    background-color: red;
+    border-radius: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section.contenido article.juegos {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: green;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.4);
+    margin: 0 auto;
+}
+
+section.contenido article.juegos h2 {
+    display: inline-block;
+    background-color: red;
+}
+
+section.contenido article.juegos img {
+    float: right;
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 150px;
+    height: auto;
+}
+
+section.contenido article.juegos p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+section.contenido article.juegos ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+section.contenido article.juegos ul li {
+    margin-bottom: 8px;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+section.contenido article.juegos ul li strong {
+    color: #a5d6a7;
+}
+
+section.contenido article.juegos h5,
+section.contenido article.juegos h6 {
+    color: black
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+section.contenido article.juegos a {
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 15px;
+    padding: 8px 14px;
+    background-color: #388e3c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+
+
+section.contenido article.juegos div {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    clear: both;
+}
+.botones-juego {
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.minimos,
+.optimos {
+    flex: 1 1 45%;
+    /* que cada uno ocupe aproximadamente el 45% del ancho */
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    /* opcional: fondo para destacar */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.minimos  {
+    margin-top: 0;
+    background-color: red;
+}
+.optimos {
+    margin-top: 0;
+    background-color: yellow
+
+}
+
+.requisitos-juego {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+}
+
+/* Pagina Juegos*/
+
 /*RESPONSIVO*/
 
 @media (max-width: 768px) {
