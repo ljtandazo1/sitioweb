@@ -18,6 +18,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
 
 }
+
 /*Estilos Menu Principal*/
 .menuprincipal {
     background-color: #004270;
@@ -606,10 +607,13 @@ input[type="checkbox"] {
     border-radius: 12px;
     margin-top: 150px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
-section h2{
+
+section h2 {
     margin-top: 10px;
     align-items: center;
+    text-align: center;
 }
 
 section.contenido article.juegos {
@@ -861,7 +865,7 @@ section.contenido article.juegos h6 {
         padding: 10px;
         width: 100%;
         float: left;
-        
+
     }
 
     .contenido-pelicula {
@@ -911,7 +915,7 @@ section.contenido article.juegos h6 {
 
     .contenedor {
         display: flex;
-        width:80%;
+        width: 80%;
     }
 
 
@@ -1000,4 +1004,41 @@ section.contenido article.juegos h6 {
         transform: scale(1.1);
     }
 
+    /*RESPONSIVIDAD LIBROS*/
+
+    .contenido {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .btn-descarga {
+        font-size: 8px;
+        margin-left: 140px;
+    }
+
+    .img-libro {
+        height: 150px;
+        width: 150px;
+    }
+
+    .titulo-libros {
+        font-size: 1.5rem;
+    }
+
+    .informacion-libro {
+        font-size: 0.5rem;
+        flex-direction: row;
+        width: 20px;
+    }
+
+    .descripcion-libro {
+        display: inline-block;
+        width: 800px;
+        font-size: 0.6rem;
+    }
+
+    .contenido {
+        background-color: #ccc;
+        width: 460px;
+    }
 }
