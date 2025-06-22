@@ -18,7 +18,6 @@ body {
     font-family: 'Times New Roman', Times, serif;
 
 }
-
 /*Estilos Menu Principal*/
 .menuprincipal {
     background-color: #004270;
@@ -603,27 +602,30 @@ input[type="checkbox"] {
 
 
 /* Pagina Juegos*/
-section.contenido {
-    margin-top: 90px;
-    padding: 20px;
-    background-color: red;
+.contenido {
     border-radius: 12px;
+    margin-top: 150px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section h2{
+    margin-top: 10px;
+    align-items: center;
 }
 
 section.contenido article.juegos {
     margin-bottom: 40px;
     padding: 20px;
-    background-color: green;
     width: 50%;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(76, 175, 80, 0.4);
     margin: 0 auto;
+    width: 80%;
+    background-color: #ccc;
+
 }
 
 section.contenido article.juegos h2 {
     display: inline-block;
-    background-color: red;
+
 }
 
 section.contenido article.juegos img {
@@ -651,71 +653,55 @@ section.contenido article.juegos ul li {
     text-indent: -1em;
 }
 
-section.contenido article.juegos ul li strong {
-    color: #a5d6a7;
-}
-
 section.contenido article.juegos h5,
 section.contenido article.juegos h6 {
-    color: black
+    color: black;
     margin-top: 20px;
     margin-bottom: 12px;
-}
-
-section.contenido article.juegos a {
-    display: inline-block;
-    margin-right: 15px;
-    margin-top: 15px;
-    padding: 8px 14px;
-    background-color: #388e3c;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-}
-
-
-
-section.contenido article.juegos div {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    clear: both;
-}
-.botones-juego {
-    padding: 0.5rem 1rem;
-    background-color: #007BFF;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
 }
 
 .minimos,
 .optimos {
     flex: 1 1 45%;
-    /* que cada uno ocupe aproximadamente el 45% del ancho */
-    box-sizing: border-box;
-    background-color: #f7f7f7;
-    /* opcional: fondo para destacar */
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
 }
 
-.minimos  {
+.minimos {
     margin-top: 0;
-    background-color: red;
 }
+
 .optimos {
     margin-top: 0;
-    background-color: yellow
-
 }
 
 .requisitos-juego {
     display: flex;
     justify-content: space-between;
-    background-color: blue;
+}
+
+.botones-juego {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 110px;
+    font-size: 0.8rem;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.botones-juego a {
+    padding: 0.5rem;
+    background-color: #c62828;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
 }
 
 /* Pagina Juegos*/
@@ -810,8 +796,6 @@ section.contenido article.juegos div {
         background-color: #0056b3;
     }
 
-
-
     .contenidoform {
         margin-top: 240px;
         max-width: 450px;
@@ -863,19 +847,26 @@ section.contenido article.juegos div {
     }
 
     .cuadro-animado {
-        width: 600px;
+        display: block;
+        width: 100%;
         float: left;
         border-radius: 12px;
         animation: borde-color 6s infinite alternate;
         justify-content: center;
-        background-color: #fdfdfd;
         border-radius: 12px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
+    footer {
+        padding: 10px;
+        width: 100%;
+        float: left;
+        
+    }
+
     .contenido-pelicula {
-        background-color: blue;
         display: flex;
+        width: 65%;
     }
 
     .imagen-pelicula {
@@ -898,14 +889,15 @@ section.contenido article.juegos div {
     .detalle-pelicula p {
         font-size: 0.8rem;
         line-height: 1rem;
-        width: 80%;
+        width: 100%;
     }
 
     .lista-detalle {
         list-style-type: none;
-        font-size: 0.95rem;
+        font-size: 0.8rem;
         border-top: 1px solid #ccc;
         padding-top: 0.8rem;
+        width: 80%;
     }
 
     .lista-detalle li {
@@ -915,52 +907,18 @@ section.contenido article.juegos div {
     .calificacion {
         font-weight: bold;
         font-size: 1rem;
-        display: flex;
-        width: 50%;
-        align-items: center;
-        margin: 0 auto;
-    }
-
-    .calificacion p {
-        align-items: center;
     }
 
     .contenedor {
         display: flex;
+        width:80%;
     }
 
-    .ver-mas {
-
-        display: flex;
-        padding: 12px 25px;
-        background-color: #0056b3;
-        font-size: 1em;
-        border-radius: 30px;
-        cursor: pointer;
-        text-align: center;
-        animation: pulse 1.8s infinite;
-        transition: transform 0.3s, box-shadow 0.3s;
-        margin: 20px;
-    }
-
-    .ver-mas a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-
-
-    }
-
-    .ver-mas:hover {
-        transform: scale(1.05);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    }
 
     /* Botón animado */
     .btn-animado {
         display: inline-block;
         padding: 12px 25px;
-        background: linear-gradient(45deg, #c62828, #e53935);
         color: #fff;
         font-weight: bold;
         font-size: 1em;
@@ -969,7 +927,6 @@ section.contenido article.juegos div {
         text-align: center;
         animation: pulse 1.8s infinite;
         transition: transform 0.3s, box-shadow 0.3s;
-        margin: 20px;
     }
 
 
@@ -986,8 +943,8 @@ section.contenido article.juegos div {
         display: none;
         justify-content: center;
         align-items: center;
-        z-index: 999;
         padding: 20px;
+        margin-top: 150px;
     }
 
     /*Muestra contenedor de video */
@@ -1024,12 +981,11 @@ section.contenido article.juegos div {
 
     /* Botón cerrar*/
     .cerrar {
-        position: absolute;
-        top: 10px;
+        position: fixed;
+        top: 80px;
         right: 10px;
         cursor: pointer;
         z-index: 2;
-        display: flex;
         align-items: center;
         justify-content: center;
     }
